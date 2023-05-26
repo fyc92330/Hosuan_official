@@ -1,0 +1,21 @@
+@import "basic";
+
+.link-btn {
+  border: 1px solid saddlebrown;
+  border-radius: 30%;
+  padding: 10px;
+  font-weight: bold;
+  text-decoration: none;
+  cursor: pointer;
+
+  span {
+    font-size: calc(5px + 2vmin);
+    position: relative;
+    display: inline-block;
+    padding: 5px 10px;
+  }
+
+  &:hover {
+    background-color: grey;
+  }
+}

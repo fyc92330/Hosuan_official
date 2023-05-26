@@ -1,0 +1,39 @@
+@import "basic";
+
+.header-wrapper {
+  margin-top: 50px;
+  margin-left: 50px;
+  margin-right: 50px;
+  overflow: hidden;
+  //display: flex;
+  //justify-content: space-between;
+  //align-items: center;
+
+
+}
+
+.header-right {
+  float: right;
+  display: flex;
+  width: 60%;
+
+  .header-menu {
+    vertical-align: bottom;
+    backface-visibility: hidden;
+    width: 70%;
+    margin: 50px auto 0;
+
+    a, span {
+      color: darkblue;
+      font-size: calc(5px + 2vmin);
+      position: relative;
+      display: inline-block;
+      padding: 5px 10px;
+    }
+
+    .link-btn {
+      padding: 5px 10px;
+      margin: 10px
+    }
+  }
+}
