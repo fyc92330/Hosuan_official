@@ -1,39 +1,68 @@
 @import "basic";
 
 .header-wrapper {
-  margin-top: 50px;
-  margin-left: 50px;
-  margin-right: 50px;
   overflow: hidden;
-  //display: flex;
-  //justify-content: space-between;
-  //align-items: center;
+  display: flex;
+  align-items: center;
+  flex-direction: row;
 
+  @media (max-width: $medium_screen){
+    flex-direction: column;
+  }
+}
 
+.header-logo {
+
+  span {
+    margin: 0 3px 0 3px;
+  }
+}
+
+.header-horizontal {
+  width: 100%;
+  height: 3px;
+  background-color: darkblue;
+  margin: 0 5px 0 15px;
+  flex-grow: 1;
+
+  @media (max-width: $medium_screen) {
+    width: 0;
+  }
 }
 
 .header-right {
-  float: right;
-  display: flex;
-  width: 60%;
+  margin-left: auto;
+  flex: 2;
+
+  @media (max-width: $medium_screen) {
+    width: 100%;
+  }
 
   .header-menu {
-    vertical-align: bottom;
-    backface-visibility: hidden;
-    width: 70%;
-    margin: 50px auto 0;
+    display: flex;
+    float: right;
+
+    @media (max-width: $medium_screen) {
+      float: none;
+      justify-content: space-between;
+    }
 
     a, span {
       color: darkblue;
-      font-size: calc(5px + 2vmin);
+      //font-size: calc(5px + 2vmin);
+      font-size: 18px;
       position: relative;
       display: inline-block;
-      padding: 5px 10px;
+
+      @media (max-width: $medium_screen) {
+        font-size: 15px;
+      }
     }
 
     .link-btn {
-      padding: 5px 10px;
-      margin: 10px
+      padding: 5px 11px 5px 11px;
+      width: 75px;
+
     }
   }
 }

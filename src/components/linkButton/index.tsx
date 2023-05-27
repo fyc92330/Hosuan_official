@@ -22,11 +22,12 @@ export default function LinkButton({name, url}: LinkButtonProp) {
     }
 
     return (
-        <a href={url}
-           className="link-btn"
-           onMouseOver={handleMouseOver}
-           onMouseOut={handleMouseOut}
-           onClick={handleClick}
-        ><span>{name}</span></a>
+        <div className="link-btn">
+            <a href={url}
+               onMouseOver={handleMouseOver}
+               onMouseOut={handleMouseOut}
+               onClick={handleClick}
+            ><span>{name}</span></a>
+        </div>
     );
 }

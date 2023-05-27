@@ -1,2 +1,13 @@
 @import "components";
 @import "header";
+
+@media screen {
+  body:lang(zh){
+    font-family: $font_arial;
+  }
+
+  body:lang(en){
+    font-family: $font_comic_sans_ms;
+  }
+}
+
