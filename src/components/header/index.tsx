@@ -1,13 +1,18 @@
 import React from "react";
 import LinkButton from "../linkButton";
 
+function negative2HomePage(){
+    window.location.href = '/';
+}
+
 const Header = () => {
     return (
         <header>
             <div className="header-wrapper">
                 <div className="header-logo">
-                    <h1><span>H</span><span>O</span><span>S</span><span>U</span><span>A</span><span>N</span></h1>
-                    {/*<div className="header-logo-horizontal" />*/}
+                    <h1 onClick={negative2HomePage}>
+                        <span>H</span><span>O</span><span>S</span><span>U</span><span>A</span><span>N</span>
+                    </h1>
                 </div>
                 <div className="header-horizontal" />
                 <div className="header-right">
